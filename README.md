@@ -8,6 +8,8 @@
 ./node_modules/gulp/bin/gulp.js
 ```
 
+After running this command, `src/test.md` is converted to `pdf/test.pdf`.
+
 ## Install
 
 Git clone and install nodejs and it's modules.
