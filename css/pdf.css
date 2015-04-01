@@ -1,0 +1,101 @@
+/*
+default-markdown
+*/
+
+body {
+  margin-right: 30px;
+  margin-left: 30px;
+  font-family: "IPAexGothic";
+}
+
+h1 {
+  width: 100%;
+  height:600px;
+  line-height: 600px;
+  font-size: 1.75em;
+  text-align:center;
+}
+
+h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+  page-break-before: always;
+
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  text-indent: 1em;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+th{
+  padding: 6px;
+  text-align: center;
+  vertical-align: top;
+  color: #333;
+  background-color: #eee;
+  border: 1px solid #b9b9b9;
+}
+td{
+  padding: 6px;
+  text-align: center;
+  vertical-align: top;
+  background-color: #fff;
+  border: 1px solid #b9b9b9;
+}
+
+ul {
+  list-style-type:circle;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/*
+remarkable-lassy
+*/
+
+.font-red {
+  color:red;
+}
+
+.author {
+  text-align:center;
+  font-size:1em;
+}
+
+p.table-title {
+  text-align:center;
+  font-weight:bold;
+  font-size:80%;
+}
+
+p.pic-title {
+  text-align:center;
+  font-weight:bold;
+  font-size:80%;
+}
