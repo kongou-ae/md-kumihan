@@ -3,8 +3,8 @@ default-markdown
 */
 
 body {
-  margin-right: 45px;
-  margin-left: 45px;
+  margin-right: 55px;
+  margin-left: 55px;
   font-family: "IPAexGothic";
   font-size:14px;
 }
@@ -87,7 +87,7 @@ a {
 remarkable-lassy
 */
 
-.font-red {
+.red {
   color:red;
 }
 
@@ -98,7 +98,7 @@ p.table-title {
   font-size:80%;
 }
 
-p.pic-title {
+p.img-title {
   text-align:center;
   font-weight:bold;
   font-size:80%;
