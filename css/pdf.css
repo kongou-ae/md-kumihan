@@ -52,7 +52,7 @@ table{
   border-collapse: collapse;
 }
 th{
-  padding: 6px;
+  padding: 3px;
   text-align: center;
   vertical-align: top;
   color: #333;
@@ -60,7 +60,7 @@ th{
   border: 1px solid #b9b9b9;
 }
 td{
-  padding: 6px;
+  padding: 3px;
   text-align: center;
   vertical-align: top;
   background-color: #fff;
@@ -89,19 +89,6 @@ remarkable-lassy
 
 .red {
   color:red;
-}
-
-
-p.table-title {
-  text-align:center;
-  font-weight:bold;
-  font-size:80%;
-}
-
-p.img-title {
-  text-align:center;
-  font-weight:bold;
-  font-size:80%;
 }
 
 .table-75 {

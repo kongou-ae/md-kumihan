@@ -67,13 +67,13 @@
  2. aaaa
  3. 本日は晴天なり
 
-表2.1.1 ほげほげ一覧 {table-title}
+**表2.1.1 ほげほげ一覧** {center}
 
 |Aaaaaa|B|C|
 |------|-|-|
 |aaaaaa|b|c|
 
-表2.1.2 ほげほげ一覧 {table-title}
+**表2.1.2 ほげほげ一覧** {center}
 
 <div class="table-75">
 
@@ -83,7 +83,7 @@
 
 </div>
 
-表2.1.3 ほげほげ一覧 {table-title}
+**表2.1.3 ほげほげ一覧** {center}
 
 <div class="table-50">
 
@@ -94,7 +94,7 @@
 </div>
 
 
-図2.1.1 猫画像 {img-title}
+**図2.1.1 猫画像 {img-title}
 
 ![ねこ](./image/17_11_vmd5c.jpg)
 
