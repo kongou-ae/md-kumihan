@@ -3,9 +3,10 @@ default-markdown
 */
 
 body {
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 45px;
+  margin-left: 45px;
   font-family: "IPAexGothic";
+  font-size:14px;
 }
 
 h1 {
@@ -90,10 +91,6 @@ remarkable-lassy
   color:red;
 }
 
-.author {
-  text-align:center;
-  font-size:1em;
-}
 
 p.table-title {
   text-align:center;
@@ -117,4 +114,8 @@ p.pic-title {
 
   width: 50%;
   margin : 0 auto;
+}
+
+.center {
+  text-align:center;
 }
