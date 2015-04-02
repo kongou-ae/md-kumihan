@@ -21,6 +21,7 @@ git clone https://github.com/kongou-ae/md-kumihan.git
 cd md-kumihan/
 npm install gulp markdown-pdf
 npm install gulp-markdown  gulp-markdown-pdf gulp-clean rimraf remarkable-classy
+sudo npm install -g doctoc
 ```
 
 default `pdf.css` is used `IPAexGothic`. Installation of `IPAexGothic` is as below.
