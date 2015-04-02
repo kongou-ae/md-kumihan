@@ -68,11 +68,18 @@ td{
 
 ul {
   list-style-type:circle;
+  margin-top:0;
+  margin-bottom:0;
 }
 
 img {
   display: block;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 /*
@@ -98,4 +105,16 @@ p.pic-title {
   text-align:center;
   font-weight:bold;
   font-size:80%;
+}
+
+.table-75 {
+  width: 75%;
+  margin : 0 auto;
+
+}
+
+.table-50 {
+
+  width: 50%;
+  margin : 0 auto;
 }

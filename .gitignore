@@ -1,2 +1,3 @@
 !test.pdf
-*.pdf
+.pdf
+node_modules/

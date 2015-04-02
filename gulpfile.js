@@ -3,12 +3,19 @@ var markdown    = require('gulp-markdown');
 var markdownpdf = require('gulp-markdown-pdf');
 var rimraf      = require('rimraf');
 var path        = require("path");
+var exec        = require('child_process').exec;
 
 // filename which is converted pdf
 var target = "src/test.md"
 
 // default task do clean, html and pdf task
-gulp.task('default', ['clean','html','pdf']);
+gulp.task('default', ['clean','toc','html','pdf']);
+
+// add toc to markdown
+
+gulp.task('toc', function() {
+  exec('doctoc ' + target + ' --title " "')
+});
 
 // markdown to html
 gulp.task('html', function () {
@@ -24,6 +31,7 @@ gulp.task('pdf', function () {
       cssPath : path.resolve('css/pdf.css'),
       runningsPath : path.resolve('js/runnings.js'),
       remarkable: {
+        html    :  true,
         plugins :  [ require('remarkable-classy') ]
       }
     }))
