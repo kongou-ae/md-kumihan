@@ -41,5 +41,6 @@ gulp.task('pdf', function () {
 
 // cleanup dist dir
 gulp.task('clean', function (cb) {
-  rimraf('dist', cb);
+  rimraf('pdf', cb);
+  rimraf('html', cb);
 });
