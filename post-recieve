@@ -1,0 +1,51 @@
+#!/bin/sh
+
+BUILD_PEPO="http://username:password@FQDN_OF_YOUR_GITLAB/USER/REPOGITORY_NAME"
+BUILD_REPO_WIKI=$(echo ${BUILD_PEPO} | sed -e "s/.git/.wiki.git/")
+
+REPO_NAME=$(basename `pwd` | sed -e "s/.git//")
+REPO_WIKI_NAME=${REPO_NAME}".wiki"
+
+if [ ! -e build_tmp ]; then
+  mkdir build_tmp
+fi
+
+cd build_tmp
+if [ -e ${REPO_NAME} ]; then
+  cd ${REPO_NAME}
+  unset GIT_DIR
+  git fetch origin
+  git reset --hard origin/master
+else
+  git clone ${BUILD_PEPO}
+  cd  ${REPO_NAME}
+fi
+
+if [ ! -e node_modules ]; then
+  sudo npm install gulp markdown-pdf
+  sudo npm install gulp-markdown gulp-markdown-pdf gulp-clean rimraf remarkable-classy
+fi
+
+sudo npm install -g doctoc
+sudo ./node_modules/gulp/bin/gulp.js
+
+cd ../
+if [ -e ${REPO_WIKI_NAME} ]; then
+  cd ${REPO_WIKI_NAME}
+  git pull
+else
+  git clone ${BUILD_REPO_WIKI}
+  cd ${REPO_WIKI_NAME}
+fi
+
+cd ../
+mv -f ${REPO_NAME}/pdf/* ${REPO_WIKI_NAME}
+cd ${REPO_WIKI_NAME}
+echo "[test.pdf](test.pdf)" > home.markdown
+echo "" >> home.markdown
+echo "build on $(date)" >> home.markdown
+git add .
+git config user.email "none"
+git config user.name "githook"
+git commit -m "build by githook"
+git push origin master
