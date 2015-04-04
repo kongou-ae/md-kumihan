@@ -112,14 +112,4 @@
 
 ## 5. GoGOGO
 
-## 6. build
-
-## 7. rebuild
-
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-
-CCCCCCCCCCCCCCCCCC
-
-DDDDDDDDDDDDDDDDDDDDDD
+this is Test!!
