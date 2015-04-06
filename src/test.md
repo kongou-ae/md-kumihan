@@ -77,12 +77,10 @@
 
 **表2.1.2 ほげほげ一覧** {center}
 
-{table-75"}
 |Aaaaaa|B|C|
 |------|---|---|
 |aaaaaa|b|c|
-
-</div>
+{table-75}
 
 **表2.1.3 ほげほげ一覧** {center}
 
