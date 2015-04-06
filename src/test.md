@@ -77,8 +77,7 @@
 
 **表2.1.2 ほげほげ一覧** {center}
 
-<div class="table-75">
-
+{table-75"}
 |Aaaaaa|B|C|
 |------|---|---|
 |aaaaaa|b|c|
