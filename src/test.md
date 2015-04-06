@@ -75,7 +75,6 @@
 |aaaaaa|b|c|
 |bbbbbb|b|c|
 
-
 **表2.1.2 ほげほげ一覧** {center}
 
 <div class="table-75">
