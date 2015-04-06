@@ -87,7 +87,7 @@
 <div class="table-50">
 
 |Aaaaaa|B|C|
-|------|-|-|
+|------|---|---|
 |aaaaaa|b|c|
 
 </div>
