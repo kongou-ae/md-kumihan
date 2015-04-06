@@ -1,5 +1,5 @@
 !test.pdf
 .pdf
 node_modules/
-!.gitkeep
+!html/.gitkeep
 html/*
