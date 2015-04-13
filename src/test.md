@@ -70,21 +70,18 @@
 
 **表2.1.1 ほげほげ一覧** {center}
 
-|Aaaaaa|B|C|
+|Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa|B|C|
 |------|---|---|
 |aaaaaa|b|c|
 |bbbbbb|b|c|
 
 **表2.1.2 ほげほげ一覧** {center}
 
-|Aaaaaa|B|C|
+|Aaaaaaaaaaaaaaaaaaaaaaaaaaaaa|B|C|
 |------|---|---|
 |aaaaaa|b|c|
-{table-75}
 
 **表2.1.3 ほげほげ一覧** {center}
-
-<div markdown="1" class="table-50">
 
 |Aaaaaa|B|C|
 |------|---|---|
