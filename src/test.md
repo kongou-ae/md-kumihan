@@ -38,6 +38,7 @@
   - [2.1. 本日は晴天なり](#21-本日は晴天なり)
 - [3. aaaa](#3-aaaa)
 - [4. aaa](#4-aaa)
+- [5. GoGOGO](#5-gogogo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -69,26 +70,21 @@
 
 **表2.1.1 ほげほげ一覧** {center}
 
-|Aaaaaa|B|C|
-|------|-|-|
+|Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa|B|C|
+|------|---|---|
 |aaaaaa|b|c|
+|bbbbbb|b|c|
 
 **表2.1.2 ほげほげ一覧** {center}
 
-<div class="table-75">
-
-|Aaaaaa|B|C|
-|------|-|-|
+|Aaaaaaaaaaaaaaaaaaaaaaaaaaaaa|B|C|
+|------|---|---|
 |aaaaaa|b|c|
-
-</div>
 
 **表2.1.3 ほげほげ一覧** {center}
 
-<div class="table-50">
-
 |Aaaaaa|B|C|
-|------|-|-|
+|------|---|---|
 |aaaaaa|b|c|
 
 </div>
