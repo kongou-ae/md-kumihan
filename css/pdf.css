@@ -48,11 +48,15 @@ p {
 }
 
 table{
-  width: 100%;
+  width: auto;
   border-collapse: collapse;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 th{
-  padding: 3px;
+  padding: 5px 10px;
   text-align: center;
   vertical-align: top;
   color: #333;
@@ -60,7 +64,7 @@ th{
   border: 1px solid #b9b9b9;
 }
 td{
-  padding: 3px;
+  padding: 5px 10px;
   text-align: center;
   vertical-align: top;
   background-color: #fff;
@@ -89,18 +93,6 @@ remarkable-lassy
 
 .red {
   color:red;
-}
-
-.table-75 {
-  width: 75%;
-  margin : 0 auto;
-
-}
-
-.table-50 {
-
-  width: 50%;
-  margin : 0 auto;
 }
 
 .center {
