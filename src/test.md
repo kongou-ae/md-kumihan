@@ -84,7 +84,7 @@
 
 **表2.1.3 ほげほげ一覧** {center}
 
-<div class="table-50">
+<div markdown="1" class="table-50">
 
 |Aaaaaa|B|C|
 |------|---|---|
