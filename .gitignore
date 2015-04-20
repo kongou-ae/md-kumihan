@@ -2,5 +2,6 @@
 .pdf
 node_modules/
 !html/.gitkeep
+!html/head.html
 html/*
 phantomjs/
