@@ -2,19 +2,24 @@
 default-markdown
 */
 
+
 body {
-  margin-right: 55px;
-  margin-left: 55px;
   font-family: "IPAexGothic";
-  font-size:14px;
+  font-size:10.5pt;
+}
+
+table {
+  font-size:10.5pt;
+
 }
 
 h1 {
-  width: 100%;
-  height:600px;
-  line-height: 600px;
+  //width: 100%;
+  //height:500px;
+  line-height: 100mm;
   font-size: 1.75em;
   text-align:center;
+  text-indent: -1em;
 }
 
 h2 {
@@ -45,14 +50,20 @@ h6 {
 
 p {
   text-indent: 1em;
+  line-height: 1.25;
+  font-size:1em;
+}
+
+p#center {
+  text-align:center;
 }
 
 table{
-  width: auto;
+  max-width:100%;
   border-collapse: collapse;
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
+  display:block;
+  margin-left : auto ;
+  margin-right : auto ;
 
 }
 th{
@@ -62,6 +73,7 @@ th{
   color: #333;
   background-color: #eee;
   border: 1px solid #b9b9b9;
+  font-size:1em;
 }
 td{
   padding: 5px 10px;
@@ -69,15 +81,18 @@ td{
   vertical-align: top;
   background-color: #fff;
   border: 1px solid #b9b9b9;
+  font-size:1em;
 }
 
 ul {
-  list-style-type:circle;
+  list-style-type:disc;
   margin-top:0;
   margin-bottom:0;
+  line-height:1.25;
 }
 
 img {
+  width:100%;
   display: block;
   margin: 0 auto;
 }
@@ -87,14 +102,16 @@ a {
   color: black;
 }
 
-/*
-remarkable-lassy
-*/
-
 .red {
   color:red;
 }
 
 .center {
   text-align:center;
+  text-indent: -0.5em;
+}
+
+.header {
+  margin:100mm;
+
 }

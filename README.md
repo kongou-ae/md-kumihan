@@ -5,23 +5,28 @@
 ## Usage
 
 ```
-./node_modules/gulp/bin/gulp.js
+/bin/sh build.sh
 ```
 
 After running this command, `src/test.md` is converted to `pdf/test.pdf`.
 
+### css/pdf.css
+
+
+
+### render-pdf.js
+
 ## Install
 
-Git clone and install nodejs and it's modules.
-
 ```
-sudo yum install git
-sudo yum install nodejs npm --enablerepo=epel
+sudo yum install git rubygems
+sudo gem install kramdown
+wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-linux-x86_64.tar.bz2
+tar jxfv phantomjs-1.9.8-linux-x86_64.tar.bz2
+mv phantomjs-1.9.8-linux-x86_64 phantomjs
 git clone https://github.com/kongou-ae/md-kumihan.git
 cd md-kumihan/
-npm install gulp markdown-pdf
-npm install gulp-markdown  gulp-markdown-pdf gulp-clean rimraf remarkable-classy
-sudo npm install -g doctoc
+/bin/sh build.sh
 ```
 
 default `pdf.css` is used `IPAexGothic`. Installation of `IPAexGothic` is as below.
