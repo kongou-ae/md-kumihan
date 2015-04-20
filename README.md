@@ -12,9 +12,11 @@ After running this command, `src/test.md` is converted to `pdf/test.pdf`.
 
 ### css/pdf.css
 
-
+the stylesheet which is used to decorate the body of document.
 
 ### render-pdf.js
+
+the script which is used to render a pdf. Contents and decoration of the header and footer is included in this script.
 
 ## Install
 
