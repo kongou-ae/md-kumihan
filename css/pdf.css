@@ -1,8 +1,3 @@
-/*
-default-markdown
-*/
-
-
 body {
   font-family: "IPAexGothic";
   font-size:10.5pt;
@@ -14,8 +9,6 @@ table {
 }
 
 h1 {
-  //width: 100%;
-  //height:500px;
   line-height: 100mm;
   font-size: 1.75em;
   text-align:center;
@@ -52,10 +45,6 @@ p {
   text-indent: 1em;
   line-height: 1.25;
   font-size:1em;
-}
-
-p#center {
-  text-align:center;
 }
 
 table{
@@ -102,16 +91,8 @@ a {
   color: black;
 }
 
-.red {
-  color:red;
-}
-
 .center {
   text-align:center;
   text-indent: -0.5em;
 }
 
-.header {
-  margin:100mm;
-
-}
