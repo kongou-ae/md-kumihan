@@ -1,11 +1,6 @@
-!test.pdf
-.pdf
-!node_modules/.gitkeep
+!.gitkeep
 node_modules/*
-!html/.gitkeep
-html/*
 phantomjs/
-!vendor/bundle/.gitkeep
 vendor/bundle/*
 Gemfile.lock
 .bundle
