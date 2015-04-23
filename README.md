@@ -21,14 +21,15 @@ the script which is used to render a pdf. Contents and decoration of the header 
 ## Install
 
 ```
-sudo yum install git rubygems
-sudo gem install kramdown
+sudo yum install git rubygems nodejs
+sudo gem install bundler
+bundle install --path vendor/bundle
 git clone https://github.com/kongou-ae/md-kumihan.git
 cd md-kumihan/
 wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-linux-x86_64.tar.bz2
 tar jxfv phantomjs-1.9.8-linux-x86_64.tar.bz2
 mv phantomjs-1.9.8-linux-x86_64 phantomjs
-/bin/sh build.sh
+node build.js
 ```
 
 default `pdf.css` is used `IPAexGothic`. Installation of `IPAexGothic` is as below.
