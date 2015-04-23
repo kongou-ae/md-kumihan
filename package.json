@@ -1,0 +1,22 @@
+{
+  "name": "md-kumihan",
+  "version": "0.0.1",
+  "description": "## Description",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "sleep": "~2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kongou-ae/md-kumihan"
+  },
+  "author": "",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/kongou-ae/md-kumihan/issues"
+  }
+}

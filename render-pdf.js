@@ -1,9 +1,11 @@
 var webPage = require('webpage');
 var page = webPage.create();
+var system = require('system');
+var args = system.args;
 
-// filename which is converted pdf
-var target      = "test.md";
-var file        = "./css/pdf.css";
+var htmlPath      = args[1];
+var pdfPath       = args[2];
+var cssElement    = args[3];
 
 // variable of footer and header
 var docTitle    = "ほげほげサービス　サービス仕様";
@@ -12,9 +14,11 @@ var fontColor   = "#808080";
 var fontFamily  = "IPAexGothic";
 var copyRight   = "Copyright 2016 hogehoge CO., LTD. All rights reserved.";
 var marginTop   = "0mm";
-var hrStyle     = "border:0 none; height:1px; color:#808080; background-color:#808080;" 
+var hrStyle     = "border:0 none; height:1px; color:#808080; background-color:#808080; clear:both;"; 
+var headImage   = "http://aimless.jp/images/header-img-10mm.png";
 
-page.open("./html/" + target + ".html", function start(status) {
+page.open( htmlPath , function start(status) {
+  //console.log(page.content)
   page.paperSize = {
     format: 'A4',
     orientation: 'portrait',
@@ -29,7 +33,7 @@ page.open("./html/" + target + ".html", function start(status) {
         if (pageNum == 1) {
           return "";
         } else {
-          return "<div style='margin-top:" + marginTop + ";font-size:" + fontSize + ";color:" +fontColor + ";font-family:" + fontFamily + ";line-height:1.5;'>" + docTitle + "</div><hr style='" + hrStyle + "'>";
+          return "<div style='float:left;margin-top:" + marginTop + ";font-size:" + fontSize + ";color:" +fontColor + ";font-family:" + fontFamily + ";line-height:1.5;'>" + docTitle + "</div><div style='float:right;'><img src='" + headImage + "' /></div><hr style='" + hrStyle + "'>";
         }
      })
     },
@@ -57,6 +61,19 @@ page.open("./html/" + target + ".html", function start(status) {
       })
     }
   };
-  page.render('./pdf/' + target + '.pdf', {format: 'pdf', quality: '100'});
+  page.evaluate(function (cssElement) {
+    var head = document.querySelector("head");
+    
+    var style = document.createElement("style");
+    style.innerHTML = cssElement;
+    head.appendChild(style);
+    /*
+    var meta = document.createElement("meta");
+    meta.setAttribute('charset', 'utf-8');
+    head.appendChild(meta);
+    */
+  }, cssElement);
+  page.render( pdfPath , {format: 'pdf', quality: '100'});
+  //console.log(page.content);
   phantom.exit();
 });

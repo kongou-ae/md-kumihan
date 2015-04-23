@@ -1,7 +1,10 @@
 !test.pdf
 .pdf
-node_modules/
+!node_modules/.gitkeep
+node_modules/*
 !html/.gitkeep
-!html/head.html
 html/*
 phantomjs/
+!vendor/bundle/.gitkeep
+vendor/bundle/
+Gemfile.lock
