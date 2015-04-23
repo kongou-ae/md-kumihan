@@ -5,7 +5,7 @@
 ## Usage
 
 ```
-/bin/sh build.sh
+node build.js
 ```
 
 After running this command, `src/test.md` is converted to `pdf/test.pdf`.
