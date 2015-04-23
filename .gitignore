@@ -8,3 +8,4 @@ phantomjs/
 !vendor/bundle/.gitkeep
 vendor/bundle/*
 Gemfile.lock
+.bundle
