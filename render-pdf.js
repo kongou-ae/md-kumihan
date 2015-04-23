@@ -14,7 +14,7 @@ var fontFamily  = "IPAexGothic";
 var copyRight   = "Copyright 2016 hogehoge CO., LTD. All rights reserved.";
 var marginTop   = "0mm";
 var hrStyle     = "border:0 none; height:1px; color:#808080; background-color:#808080; clear:both;"; 
-var headImage   = "http://aimless.jp/images/header-img-10mm.png";
+var headImage   = "../image/header-img-10mm.png";
 
 page.open( htmlPath , function start(status) {
   // get H1 from markdown

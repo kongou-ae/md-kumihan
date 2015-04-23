@@ -96,7 +96,7 @@
 **図2.1.1 画像**
 {:.center}
 
-![image](./image/d0749a71d946d1f81ff6b7f5367bf999_s.jpg)
+![image](../image/d0749a71d946d1f81ff6b7f5367bf999_s.jpg)
 
 
 ## 3. aaaa
@@ -113,3 +113,6 @@
 ## 5. GoGOGO
 
 this is Test!!
+
+![image](../image/header-img-10mm.png)
+{:.displaynone}
