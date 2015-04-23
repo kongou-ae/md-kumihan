@@ -6,5 +6,5 @@ node_modules/*
 html/*
 phantomjs/
 !vendor/bundle/.gitkeep
-vendor/bundle/
+vendor/bundle/*
 Gemfile.lock
