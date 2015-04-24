@@ -18,6 +18,10 @@ the stylesheet which is used to decorate the body of document.
 
 the script which is used to render a pdf. Contents and decoration of the header and footer is included in this script.
 
+## Require
+- kramdown
+- phantomjs
+
 ## Install
 
 ```
