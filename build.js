@@ -1,16 +1,19 @@
-//UTF-8になーれ
 var path         = require("path");
 var childProcess = require("child_process");
 var sleep        = require('sleep');
 var fs           = require('fs');
 var param        = require('./param.json') 
 
+// make html from markdown
 childProcess.exec('cat src/' + param.src + ' | ./vendor/bundle/ruby/2.1.0/bin/kramdown --template style/template.html --toc-levels 2..3 > html/' + param.src + '.html' ,function (er, stdout, stderr){
   if (stdout){ console.log(stdout); }
   if (stderr){ console.error(stderr); }
 });
+
+// if not sleep, pdf file is not build...
 sleep.sleep(5);
 
+// build pdf from html
 var phantomPath = path.resolve('phantomjs/bin/phantomjs');
 var css = fs.readFileSync('style/pdf.css', 'utf-8');
 var opts = [];

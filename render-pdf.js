@@ -45,15 +45,19 @@ page.open( htmlPath , function start(status) {
       contents : phantom.callback(function(pageNum, numPages) {
         defaultFooter = "<hr style='" + hrStyle + "'><div style='text-align:center;font-size:" + fontSize + ";color:" + fontColor + ";font-family:" + fontFamily + ";line-height:1.5;'>" + copyRight + "<br>";
         switch(pageNum){
+          // top page
           case 1:
-            footer = "</div>";
+            footer = "";
             break;
+          //update history
           case 2:
             footer = defaultFooter + "ⅰ</div>";
             break;
+          // toc
           case 3:
             footer = defaultFooter + "ⅱ" + "</div>";
             break;
+          // body
           default:
             pageNum = pageNum - 3;
             numPages = numPages - 3;
@@ -70,11 +74,7 @@ page.open( htmlPath , function start(status) {
     var style = document.createElement("style");
     style.innerHTML = cssElement;
     head.appendChild(style);
-    /*
-    var meta = document.createElement("meta");
-    meta.setAttribute('charset', 'utf-8');
-    head.appendChild(meta);
-    */
+
   }, cssElement);
   page.render( pdfPath , {format: 'pdf', quality: '100'});
   //console.log(page.content);

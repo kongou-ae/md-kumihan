@@ -1,6 +1,8 @@
 # md-kumihan
 
-## Description
+## Overview
+
+md-kumihan is simple tool for building pdf file from markdown.
 
 ## Usage
 
@@ -18,7 +20,7 @@ the stylesheet which is used to decorate the body of document.
 
 the script which is used to render a pdf. Contents and decoration of the header and footer is included in this script.
 
-## Require
+## Requirement
 - kramdown
 - phantomjs
 
