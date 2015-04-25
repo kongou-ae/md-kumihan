@@ -12,6 +12,10 @@ node build.js
 
 After running this command, `src/test.md` is converted to `pdf/test.pdf`.
 
+### param.json
+
+input the path of markdown which you'd like to change to pdf.
+
 ### css/pdf.css
 
 the stylesheet which is used to decorate the body of document.
